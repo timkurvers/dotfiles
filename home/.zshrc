@@ -30,3 +30,10 @@ alias b="bundle exec "
 alias av="source .virtualenv/bin/activate &> /dev/null; source ../.virtualenv/bin/activate &> /dev/null; source ../../.virtualenv/bin/activate &> /dev/null"
 alias dv="deactivate"
 
+# PostgreSQL aliases
+alias pgsqld.start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgsqld.stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# MongoDB aliases
+alias mongod.start='mongod run --config /usr/local/Cellar/mongodb/2.0.3-x86_64/mongod.conf'
+alias mongod.stop='killall mongod'
