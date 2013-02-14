@@ -37,3 +37,7 @@ alias pgsqld.stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # MongoDB aliases
 alias mongod.start='mongod run --config /usr/local/Cellar/mongodb/2.0.3-x86_64/mongod.conf'
 alias mongod.stop='killall mongod'
+
+# Miscellaneous
+alias serve='python -m SimpleHTTPServer'
+alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
