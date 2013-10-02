@@ -14,12 +14,6 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git brew osx pip)
 
-# Ensure Homebrew is on the path
-export PATH=$PATH:/usr/local/bin
-
-# Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Fire up oh-my-zsh!
 source $ZSH/oh-my-zsh.sh
 
