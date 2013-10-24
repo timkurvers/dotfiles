@@ -34,3 +34,4 @@ alias pgsqld-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # Miscellaneous
 alias serve='python -m SimpleHTTPServer'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
+alias git-scrape='find . -name .git | while read filename; do (cd "$filename/../"; git diff --exit-code > /dev/null 2>&1; if [ $? -ne 0 ]; then; echo $filename; fi;) done'
