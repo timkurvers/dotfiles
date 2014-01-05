@@ -9,6 +9,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # NPM
+export PATH="$PATH:./node_modules/.bin"
 export PATH="$PATH:/usr/local/share/npm/bin"
 
 # Flex SDK
