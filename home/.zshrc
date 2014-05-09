@@ -31,6 +31,9 @@ alias dv="deactivate"
 alias pgsqld-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgsqld-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
+# MongoDB alias
+alias mongod="mongod --config /usr/local/etc/mongod.conf"
+
 # Miscellaneous
 alias serve='python -m SimpleHTTPServer'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
