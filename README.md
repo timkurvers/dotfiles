@@ -1,4 +1,4 @@
-# ZSH Dotfiles
+# Zsh dotfiles
 
 ## Installation
 
