@@ -12,6 +12,10 @@ alias pgsqld-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 # MongoDB alias
 alias mongod='mongod --config /usr/local/etc/mongod.conf'
 
+# MySQL aliases
+alias mysqld-start='mysql.server start'
+alias mysqld-stop='mysql.server stop'
+
 # Miscellaneous
 alias serve='python -m SimpleHTTPServer'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
