@@ -6,7 +6,7 @@ function collapse_pwd {
 }
 
 function git_info {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  ref=$(git symbolic-ref HEAD --short 2> /dev/null) || return
 
   local git_dirty="⚡︎"
   local git_clean="☁"
@@ -19,9 +19,9 @@ function git_info {
   fi
 
   if [[ -n $(git status -s 2> /dev/null) ]]; then
-    echo "%{$fg_bold[yellow]%}$git_dirty ${ref#refs/heads/}$ahead %{$reset_color%}"
+    echo "%{$fg_bold[yellow]%}$git_dirty ${ref}$ahead %{$reset_color%}"
   else
-    echo "%{$fg_bold[cyan]%}$git_clean ${ref#refs/heads/}$ahead %{$reset_color%}"
+    echo "%{$fg_bold[cyan]%}$git_clean ${ref}$ahead %{$reset_color%}"
   fi
 }
 
