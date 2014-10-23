@@ -1,11 +1,11 @@
-# Zsh dotfiles
+# My dotfiles
 
 ## Installation
 
 Install as a castle using [Homesick](https://github.com/technicalpickles/homesick):
 
-    homesick clone timkurvers/dotfiles-zsh
+    homesick clone timkurvers/dotfiles
     
 Then symlink into your homefolder:
 
-    homesick symlink dotfiles-zsh
+    homesick symlink dotfiles
