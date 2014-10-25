@@ -8,4 +8,4 @@ Install as a castle using [Homesick](https://github.com/technicalpickles/homesic
 
 Then symlink into your homefolder:
 
-    homesick symlink dotfiles
+    homesick symlink timkurvers/dotfiles
