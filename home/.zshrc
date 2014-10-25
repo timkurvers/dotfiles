@@ -11,7 +11,7 @@ unsetopt correct_all
 antigen use oh-my-zsh
 antigen bundle osx
 antigen bundle wd
-antigen theme ~/.homesick/repos/timkurvers/dotfiles/themes/moonsphere.zsh-theme
+antigen theme timkurvers/zsh-themes moonsphere
 antigen apply
 
 source ~/.zshalias
