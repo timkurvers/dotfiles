@@ -19,5 +19,4 @@ alias mysqld-stop='mysql.server stop'
 # Miscellaneous
 alias serve='python -m SimpleHTTPServer'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
-alias git-scrape='find . -name .git -type d | while read filename; do (cd "$filename/../"; git diff --exit-code > /dev/null 2>&1; if [ $? -ne 0 ]; then; echo $filename; fi;) done'
 alias chrome='open -a "Google Chrome"'
