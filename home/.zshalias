@@ -1,18 +1,18 @@
-# Bundler alias
+# Bundler
 alias b='bundle exec '
 
-# Python virtualenv activate/deactivate aliases
+# Python virtual environments
 alias av='source .virtualenv/bin/activate &> /dev/null; source ../.virtualenv/bin/activate &> /dev/null; source ../../.virtualenv/bin/activate &> /dev/null'
 alias dv='deactivate'
 
-# PostgreSQL aliases
+# PostgreSQL
 alias pgsqld-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgsqld-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-# MongoDB alias
+# MongoDB
 alias mongod='mongod --config /usr/local/etc/mongod.conf'
 
-# MySQL aliases
+# MySQL
 alias mysqld-start='mysql.server start'
 alias mysqld-stop='mysql.server stop'
 
