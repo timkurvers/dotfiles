@@ -17,6 +17,6 @@ alias mysqld-start='mysql.server start'
 alias mysqld-stop='mysql.server stop'
 
 # Miscellaneous
-alias serve='python -m SimpleHTTPServer'
-alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias chrome='open -a "Google Chrome"'
+alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
+alias serve='python -m SimpleHTTPServer'
