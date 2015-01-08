@@ -10,7 +10,8 @@ alias pgsqld-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres
 alias pgsqld-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # MongoDB
-alias mongod='mongod --config /usr/local/etc/mongod.conf'
+alias mongod-start='launchctl load /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist'
+alias mongod-stop='launchctl unload /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist'
 
 # MySQL
 alias mysqld-start='mysql.server start'
