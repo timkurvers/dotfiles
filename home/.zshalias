@@ -13,6 +13,10 @@ alias pgsqld-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias mongod-start='launchctl load /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist'
 alias mongod-stop='launchctl unload /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist'
 
+# Redis
+alias redis-start='launchctl load /usr/local/opt/redis/homebrew.mxcl.redis.plist'
+alias redis-stop='launchctl unload /usr/local/opt/redis/homebrew.mxcl.redis.plist'
+
 # MySQL
 alias mysqld-start='mysql.server start'
 alias mysqld-stop='mysql.server stop'
