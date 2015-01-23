@@ -26,3 +26,10 @@ alias chrome='open -a "Google Chrome"'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias serve='python -m SimpleHTTPServer'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+update() {
+  homesick pull --all
+  antigen selfupdate
+  antigen update
+  brew update
+}
