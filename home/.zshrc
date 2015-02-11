@@ -7,6 +7,9 @@ DISABLE_AUTO_TITLE=true
 # Disable auto correction
 unsetopt correct_all
 
+# Disable errors for non-matching file pattern expansions
+unsetopt nomatch
+
 # Antigen configuration
 antigen use oh-my-zsh
 antigen bundle osx
