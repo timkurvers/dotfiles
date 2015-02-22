@@ -1,12 +1,12 @@
+# Homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
 # Ruby virtual env
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Direnv
 eval "$(direnv hook $0)"
-
-# Homebrew
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
