@@ -16,6 +16,7 @@ antigen bundle osx
 antigen bundle wd
 antigen bundle timkurvers/git-scrape
 antigen bundle timkurvers/git-wipe-branch
+antigen bundle timkurvers/hotcorners
 antigen theme timkurvers/zsh-themes moonsphere
 antigen apply
 
