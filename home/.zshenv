@@ -1,17 +1,17 @@
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Ruby virtual env
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Direnv
+# direnv
 eval "$(direnv hook $0)"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# NPM
+# npm
 export PATH="$PATH:./node_modules/.bin"
 export NODE_PATH="/usr/local/lib/node_modules"
 
