@@ -1,0 +1,5 @@
+.DS_Store
+.ruby-version
+*.sublime-project
+*.sublime-workspace
+.virtualenv
