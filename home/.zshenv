@@ -9,9 +9,6 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
 
-# npm
-export PATH="$PATH:./node_modules/.bin"
-
 # direnv
 eval "$(direnv hook $0)"
 
