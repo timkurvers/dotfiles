@@ -1,4 +1,5 @@
 .DS_Store
+.node-version
 .ruby-version
 *.sublime-project
 *.sublime-workspace
