@@ -5,9 +5,12 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# ndenv
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
+
 # npm
 export PATH="$PATH:./node_modules/.bin"
-export NODE_PATH="/usr/local/lib/node_modules"
 
 # direnv
 eval "$(direnv hook $0)"
