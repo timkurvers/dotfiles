@@ -1,4 +1,5 @@
 .DS_Store
+.envrc
 .node-version
 .ruby-version
 *.sublime-project
