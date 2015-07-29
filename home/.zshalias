@@ -27,6 +27,15 @@ alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias serve='python -m SimpleHTTPServer'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+socketpolicyd() {
+  while true; do
+    echo '<?xml version="1.0"?>
+  <cross-domain-policy>
+    <allow-access-from domain="*" />
+  </cross-domain-policy>' | sudo nc -l 843;
+  done
+}
+
 update() {
   homesick pull --all
   antigen selfupdate
