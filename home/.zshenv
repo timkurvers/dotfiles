@@ -12,6 +12,9 @@ eval "$(ndenv init -)"
 # direnv
 eval "$(direnv hook $0)"
 
+# Android Studio
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
