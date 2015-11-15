@@ -14,10 +14,10 @@ unsetopt nomatch
 antigen use oh-my-zsh
 
 antigen bundle osx
-antigen bundle wd
 antigen bundle timkurvers/git-scrape
 antigen bundle timkurvers/git-wipe-branch
 antigen bundle timkurvers/hotcorners
+antigen bundle wd
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme timkurvers/zsh-themes moonsphere
