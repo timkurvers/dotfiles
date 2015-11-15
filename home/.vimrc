@@ -15,3 +15,8 @@ filetype plugin indent on
 " Configuration
 syntax on
 colorscheme molokai
+
+highlight ColorColumn ctermbg=black
+set colorcolumn=81
+highlight OverLength ctermbg=red ctermfg=white
+match OverLength /\%81v.\+/
