@@ -5,22 +5,6 @@ alias b='bundle exec '
 alias av='source .virtualenv/bin/activate &> /dev/null; source ../.virtualenv/bin/activate &> /dev/null; source ../../.virtualenv/bin/activate &> /dev/null'
 alias dv='deactivate'
 
-# PostgreSQL
-alias pgsqld-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgsqld-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
-# MongoDB
-alias mongod-start='launchctl load -w /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist'
-alias mongod-stop='launchctl unload /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist'
-
-# Redis
-alias redis-start='launchctl load -w /usr/local/opt/redis/homebrew.mxcl.redis.plist'
-alias redis-stop='launchctl unload /usr/local/opt/redis/homebrew.mxcl.redis.plist'
-
-# MySQL
-alias mysqld-start='mysql.server start'
-alias mysqld-stop='mysql.server stop'
-
 # Miscellaneous
 alias chrome='open -a "Google Chrome"'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
