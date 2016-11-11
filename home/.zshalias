@@ -8,6 +8,7 @@ alias dv='deactivate'
 # Miscellaneous
 alias chrome='open -a "Google Chrome"'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
+alias random='openssl rand -hex 16'
 alias serve='python -m SimpleHTTPServer'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
