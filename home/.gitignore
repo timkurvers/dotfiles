@@ -3,7 +3,6 @@
 .envrc
 .node-version
 .ruby-version
-*.sublime-project
-*.sublime-workspace
 .virtualenv
+.vscode
 npm-debug.log
