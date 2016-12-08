@@ -8,7 +8,6 @@ alias dv='deactivate'
 # Miscellaneous
 alias chrome='open -a "Google Chrome"'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
-alias random='openssl rand -hex 16'
 alias serve='python -m SimpleHTTPServer'
 
 socketpolicyd() {
@@ -25,4 +24,9 @@ update() {
   antigen selfupdate
   antigen update
   brew update
+}
+
+random() {
+  let "length = ${1:=32} / 2"
+  openssl rand -hex $length
 }
