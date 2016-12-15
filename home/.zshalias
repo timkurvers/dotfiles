@@ -8,6 +8,7 @@ alias dv='deactivate'
 # Miscellaneous
 alias chrome='open -a "Google Chrome"'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
+alias dnsflush='sudo killall -HUP mDNSResponder'
 alias serve='python -m SimpleHTTPServer'
 
 socketpolicyd() {
