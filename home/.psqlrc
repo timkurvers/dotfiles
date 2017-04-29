@@ -1,0 +1,12 @@
+-- Don't display the "helpful" message on startup.
+\set QUIET 1
+
+-- Use best available output format.
+\x auto
+
+-- Verbose error reports.
+\set VERBOSITY verbose
+
+-- By default, NULL displays as an empty space. Is it actually an empty
+-- string, or is it null? This makes that distinction visible.
+\pset null NULL
