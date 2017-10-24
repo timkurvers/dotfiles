@@ -28,6 +28,7 @@ update() {
 }
 
 random() {
+  local length
   let "length = ${1:=32} / 2"
   openssl rand -hex $length
 }
