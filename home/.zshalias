@@ -20,6 +20,17 @@ socketpolicyd() {
   done
 }
 
+testsocketpolicy() {
+  local host=$1
+  local port
+  let "port = ${2:=843}"
+
+  echo "Testing: ${host}:${port}"
+  echo
+  python -c 'print "<policy-file-request/>%c" % 0' | nc $host $port
+  echo
+}
+
 update() {
   homesick pull --all
   antigen selfupdate
