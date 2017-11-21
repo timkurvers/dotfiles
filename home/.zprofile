@@ -1,3 +1,6 @@
+# These path adjustments should really be in .zshenv
+# See: https://github.com/thoughtbot/dotfiles/pull/426
+
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
