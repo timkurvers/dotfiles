@@ -6,7 +6,6 @@ alias av='source .virtualenv/bin/activate &> /dev/null; source ../.virtualenv/bi
 alias dv='deactivate'
 
 # Miscellaneous
-alias chrome='open -a "Google Chrome"'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias serve='python -m SimpleHTTPServer'
