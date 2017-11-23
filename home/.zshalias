@@ -9,6 +9,7 @@ alias dv='deactivate'
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias serve='python -m SimpleHTTPServer'
+alias ndenv='nodenv'
 
 socketpolicyd() {
   while true; do
