@@ -1,0 +1,11 @@
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/timkurvers/.gitignore
+	editor = /usr/bin/vim
+[push]
+	default = simple
+	followTags = true
+[user]
+	name = Tim Kurvers
+	email = tim@moonsphere.net
