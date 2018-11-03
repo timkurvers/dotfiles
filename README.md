@@ -4,7 +4,7 @@
 
 Install as a castle using [Homesick](https://github.com/technicalpickles/homesick):
 
-    homesick clone timkurvers/dotfiles
+    homesick clone timkurvers/dotfiles timkurvers/dotfiles
 
 Then symlink into your homefolder:
 
