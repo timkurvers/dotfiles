@@ -8,8 +8,18 @@ alias dv='deactivate'
 # Miscellaneous
 alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias dnsflush='sudo killall -HUP mDNSResponder'
-alias serve='python -m SimpleHTTPServer'
 alias ndenv='nodenv'
+alias serve='python -m SimpleHTTPServer'
+
+random() {
+  local length
+  let "length = ${1:=32} / 2"
+  openssl rand -hex $length
+}
+
+reload() {
+  source ~/.zshalias
+}
 
 socketpolicyd() {
   while true; do
@@ -29,16 +39,6 @@ testsocketpolicy() {
   echo
   python -c 'print "<policy-file-request/>%c" % 0' | nc $host $port
   echo
-}
-
-random() {
-  local length
-  let "length = ${1:=32} / 2"
-  openssl rand -hex $length
-}
-
-reload() {
-  source ~/.zshalias
 }
 
 update() {
