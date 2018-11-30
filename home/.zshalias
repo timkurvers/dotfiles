@@ -31,15 +31,19 @@ testsocketpolicy() {
   echo
 }
 
+random() {
+  local length
+  let "length = ${1:=32} / 2"
+  openssl rand -hex $length
+}
+
+reload() {
+  source ~/.zshalias
+}
+
 update() {
   homesick pull --all
   antigen selfupdate
   antigen update
   brew update
-}
-
-random() {
-  local length
-  let "length = ${1:=32} / 2"
-  openssl rand -hex $length
 }
