@@ -11,6 +11,7 @@
 [user]
 	name = Tim Kurvers
 	email = tim@moonsphere.net
+	signingkey = E5E6D4ED4C82A59B
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
