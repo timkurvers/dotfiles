@@ -10,6 +10,7 @@ alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias ndenv='nodenv'
 alias serve='python -m SimpleHTTPServer'
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
 random() {
   local length
