@@ -23,6 +23,10 @@ eval "$(direnv hook $0)"
 # Android Studio
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 
+# Google Cloud SDK
+if [ -f "$HOME/.google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/.google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/.google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/.google-cloud-sdk/completion.zsh.inc"; fi
+
 # Fix damned locale issues
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
