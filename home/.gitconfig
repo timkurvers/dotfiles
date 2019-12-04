@@ -18,5 +18,5 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
-	authors = shortlog -ns --all
+	authors = shortlog -ens --all
 	rob = !git branch --merged | egrep -v \"(^\\*|master)\" | xargs git branch -d
