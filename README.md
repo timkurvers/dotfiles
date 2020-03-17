@@ -4,10 +4,16 @@
 
 ## Installation
 
-Install as a castle using [Homesick](https://github.com/technicalpickles/homesick):
+Install as a castle using [Homesick]:
 
-    homesick clone timkurvers/dotfiles timkurvers/dotfiles
+```shell
+homesick clone timkurvers/dotfiles timkurvers/dotfiles
+```
 
 Then symlink into your homefolder:
 
-    homesick symlink timkurvers/dotfiles
+```shell
+homesick symlink timkurvers/dotfiles
+```
+
+[Homesick]: (https://github.com/technicalpickles/homesick)
