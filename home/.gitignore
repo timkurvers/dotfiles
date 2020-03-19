@@ -2,6 +2,7 @@
 .env
 .envrc
 .node-version
+.python-version
 .ruby-version
 .virtualenv
 .vscode
