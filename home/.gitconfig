@@ -19,4 +19,4 @@
 	required = true
 [alias]
 	authors = shortlog -ens --all
-	rob = !git branch | egrep -v \"(^\\*|master)\" | xargs -p git branch -d
+	rob = !git branch | egrep -v \"(^\\*|master)\" | xargs -p -I % git branch -D %
