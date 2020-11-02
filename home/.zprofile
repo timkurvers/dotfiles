@@ -4,6 +4,12 @@
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
+# goenv
+export GOENV_GOPATH_PREFIX="$HOME/.go"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
