@@ -21,3 +21,4 @@
 	authors = shortlog -ens --all
 	changes = !git add -N . && git -P diff $1 && git reset --quiet && :
 	rob = !git branch | egrep -v \"(^\\*|master)\" | xargs -p -I % git branch -D %
+	stash-staged = !git stash -- $(git diff --staged --name-only)
