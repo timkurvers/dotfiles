@@ -12,6 +12,12 @@ alias ndenv='nodenv'
 alias serve='python -m SimpleHTTPServer'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
+killport() {
+  local port
+  let "port = ${1:=8080}"
+  kill `lsof -t -i:$port` &> /dev/null
+}
+
 random() {
   local length
   let "length = ${1:=32} / 2"
@@ -33,10 +39,4 @@ video2gif() {
   ffmpeg -y -i "${1}" -vf fps=${3:-10},scale=${2:-640}:-1:flags=lanczos,palettegen "${1}.png"
   ffmpeg -i "${1}" -i "${1}.png" -filter_complex "fps=${3:-10},scale=${2:-640}:-1:flags=lanczos[x];[x][1:v]paletteuse" "${1}".gif
   rm "${1}.png"
-}
-
-killport() {
-  local port
-  let "port = ${1:=8080}"
-  kill `lsof -t -i:$port` &> /dev/null
 }
