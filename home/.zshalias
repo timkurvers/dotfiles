@@ -22,26 +22,6 @@ reload() {
   source ~/.zshalias
 }
 
-socketpolicyd() {
-  while true; do
-    echo '<?xml version="1.0"?>
-  <cross-domain-policy>
-    <allow-access-from domain="*" />
-  </cross-domain-policy>' | sudo nc -l 843;
-  done
-}
-
-testsocketpolicy() {
-  local host=$1
-  local port
-  let "port = ${2:=843}"
-
-  echo "Testing: ${host}:${port}"
-  echo
-  python -c 'print "<policy-file-request/>%c" % 0' | nc $host $port
-  echo
-}
-
 update() {
   homesick pull --all
   antigen selfupdate
