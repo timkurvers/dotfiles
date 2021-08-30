@@ -6,7 +6,7 @@ alias av='source .virtualenv/bin/activate &> /dev/null; source ../.virtualenv/bi
 alias dv='deactivate'
 
 # Miscellaneous
-alias crlf='find . -not -type d -exec file "{}" ";" | grep CRLF'
+alias crlf='find . -type d -name node_modules -prune -o -type d -name .git -prune -o -type f -name "*" -exec file "{}" ";" | grep CRLF'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias ndenv='nodenv'
 alias serve='python -m SimpleHTTPServer'
