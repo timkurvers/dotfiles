@@ -26,6 +26,9 @@ eval "$(pyenv init -)"
 # direnv
 eval "$(direnv hook $0)"
 
+# rustup
+source "$HOME/.cargo/env"
+
 # Android Studio
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 
