@@ -11,6 +11,7 @@ alias dnsflush='sudo killall -HUP mDNSResponder'
 alias ndenv='nodenv'
 alias serve='python -m SimpleHTTPServer'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+alias smerge='/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge'
 
 killport() {
   local port
