@@ -1,11 +1,3 @@
-# Bundler
-alias b='bundle exec '
-
-# Python virtual environments
-alias av='source .virtualenv/bin/activate &> /dev/null; source ../.virtualenv/bin/activate &> /dev/null; source ../../.virtualenv/bin/activate &> /dev/null'
-alias dv='deactivate'
-
-# Miscellaneous
 alias crlf='find . -type d -name node_modules -prune -o -type d -name .git -prune -o -type f -name "*" -exec file "{}" ";" | grep CRLF'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 alias ndenv='nodenv'
