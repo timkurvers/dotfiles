@@ -9,6 +9,8 @@
 [push]
 	default = simple
 	followTags = true
+[pull]
+	ff = only
 [user]
 	name = Tim Kurvers
 	email = tim@moonsphere.net
