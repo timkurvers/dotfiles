@@ -3,6 +3,7 @@
 
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # goenv
 export GOENV_GOPATH_PREFIX="$HOME/.go"
