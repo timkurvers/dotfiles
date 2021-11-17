@@ -10,10 +10,21 @@ Install as a castle using [Homesick]:
 homesick clone timkurvers/dotfiles timkurvers/dotfiles
 ```
 
+Remember to initialize submodules:
+
+
+```shell
+cd .homesick/repos/timkurvers/dotfiles
+git submodule init
+git submodule update
+```
+
 Then symlink into your homefolder:
 
 ```shell
 homesick symlink timkurvers/dotfiles
 ```
+
+Open a new shell! 🤘
 
 [Homesick]: (https://github.com/technicalpickles/homesick)
