@@ -20,7 +20,7 @@ unsetopt nomatch
 # Antigen configuration
 antigen use oh-my-zsh
 
-antigen bundle osx
+antigen bundle macos
 antigen bundle timkurvers/git-scrape
 antigen bundle timkurvers/git-wipe-branch
 antigen bundle timkurvers/hotcorners
