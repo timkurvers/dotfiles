@@ -35,6 +35,7 @@ source "$HOME/.cargo/env"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 
 # Google Cloud SDK
+export CLOUDSDK_PYTHON_SITEPACKAGES=1
 if [ -f "$HOME/.google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/.google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "$HOME/.google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/.google-cloud-sdk/completion.zsh.inc"; fi
 
