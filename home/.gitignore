@@ -1,6 +1,7 @@
 .DS_Store
 .env
 .envrc
+.go-version
 .node-version
 .python-version
 .ruby-version
