@@ -24,6 +24,7 @@ antigen bundle macos
 antigen bundle timkurvers/git-scrape
 antigen bundle timkurvers/git-wipe-branch
 antigen bundle timkurvers/hotcorners
+antigen bundle timkurvers/metalhud@main
 antigen bundle wd
 antigen bundle zsh-users/zsh-syntax-highlighting
 
