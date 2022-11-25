@@ -5,6 +5,7 @@ alias ndenv='nodenv'
 alias serve='python3 -m http.server'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias smerge='/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge'
+alias ports='lsof -Pn | grep LISTEN'
 
 killport() {
   local port
