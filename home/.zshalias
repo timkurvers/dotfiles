@@ -13,6 +13,10 @@ killport() {
   kill `lsof -t -i:$port` &> /dev/null
 }
 
+md5dir() {
+  find -s ${1:=.} -type f -exec md5 {} \; | md5
+}
+
 random() {
   local length
   let "length = ${1:=32} / 2"
