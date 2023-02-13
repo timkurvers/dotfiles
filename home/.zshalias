@@ -14,7 +14,7 @@ killport() {
 }
 
 md5dir() {
-  find -s ${1:=.} -type f -exec md5 {} \; | md5
+  find -s ${1:=.} -type f -exec md5 -q {} \; | md5 -q
 }
 
 random() {
