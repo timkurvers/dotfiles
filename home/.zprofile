@@ -1,9 +1,12 @@
 # These path adjustments should really be in .zshenv
 # See: https://github.com/thoughtbot/dotfiles/pull/426
 
-# Homebrew
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
+# Homebrew (multi-arch)
+if [ "$(arch)" = "arm64" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
 
 # goenv
 export GOENV_GOPATH_PREFIX="$HOME/.go"
