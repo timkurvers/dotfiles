@@ -2,6 +2,7 @@
 .env
 .envrc
 .go-version
+.local-only
 .node-version
 .python-version
 .ruby-version
