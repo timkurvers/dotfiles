@@ -8,6 +8,7 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 alias smerge='/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge'
 alias ports='lsof -Pn | grep LISTEN'
 alias rzsh='arch -x86_64 zsh --login'
+alias uuid='uuidgen | tr "[:upper:]" "[:lower:]"'
 
 killport() {
   local port
