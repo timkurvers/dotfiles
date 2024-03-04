@@ -33,7 +33,7 @@ export PATH="$PYENV_ROOT/shims:$PATH"
 eval "$(pyenv init -)"
 
 # direnv
-eval "$(direnv hook $0)"
+eval "$(direnv hook zsh)"
 
 # rustup
 source "$HOME/.cargo/env"
