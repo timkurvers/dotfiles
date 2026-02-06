@@ -46,6 +46,9 @@ export CLOUDSDK_PYTHON_SITEPACKAGES=1
 if [ -f "$HOME/.google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/.google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "$HOME/.google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/.google-cloud-sdk/completion.zsh.inc"; fi
 
+# Additional local binaries
+export PATH="$HOME/.local/bin:$PATH"
+
 # Fix damned locale issues
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
