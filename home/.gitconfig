@@ -25,6 +25,7 @@
 	authors = shortlog -ens --all
 	changes = !git add -N . && git -P diff $1 && git reset --quiet && :
 	rob = !git branch | egrep -v \"(^\\*|master)\" | xargs -p -I % git branch -D %
-	stash-staged = !git stash -- $(git diff --staged --name-only)
+	stash-rename = "!f() { test $# -eq 2 || { echo \"usage: git stash-rename <stash> <message>\" >&2; return 1; }; rev=$(git rev-parse --verify --quiet \"$1\") || return 1; git stash drop \"$1\" || return 1; git stash store -m \"$2\" \"$rev\"; }; f"
+	stash-staged = !git stash push --staged
 [include]
 	path = ~/.gitconfig-local
