@@ -43,4 +43,8 @@ video2gif() {
   rm "${1}.png"
 }
 
+ffcompress() {
+  ffmpeg -i "$1" -c:v libx264 -crf 28 -preset medium -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart "${1:r}-compressed.mp4"
+}
+
 if [ -f ~/.zshalias-local ]; then . ~/.zshalias-local; fi
