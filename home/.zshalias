@@ -32,7 +32,6 @@ reload() {
 
 update() {
   homesick pull --all
-  antigen selfupdate
   antigen update
   brew update
 }
